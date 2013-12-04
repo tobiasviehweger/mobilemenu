@@ -16,7 +16,8 @@ $.fn.mobileMenu = function(options) {
 			defaultText: 'Navigate to...',
 			className: 'select-menu',
 			subMenuClass: 'sub-menu',
-			subMenuDash: '&ndash;'
+			subMenuDash: '&ndash;',
+			linkAnchor: ''
 		},
 		settings = $.extend( defaults, options ),
 		el = $(this);
@@ -55,7 +56,7 @@ $.fn.mobileMenu = function(options) {
 
 			// Now build menu and append it
 			$('<option />', {
-				"value"	: this.href,
+				"value"	: this.href + settings.linkAnchor,
 				"html"	: optText,
 				"selected" : (this.href == window.location.href)
 			}).appendTo( $select_menu );
