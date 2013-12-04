@@ -1,3 +1,7 @@
+# Fork
+
+This fork adds a new setting called linkAnchor, see below.
+
 # jQuery Mobilemenu
 
 jQuery mobile menu is a jquery plugin for turn an unordered list menu 
@@ -30,6 +34,8 @@ jQuery mobilemenu have some options:
 * `subMenuClass`: Class name for submenu /* Updated you don't need to add class to sub menu */
 
 * `subMenuDash`: Separator for submenu
+
+* `linkAnchor`: Specifies a link anchor which should be prepended to all links (e.g. '#content')
 
 ```javascript
 $('.menu').mobileMenu({
